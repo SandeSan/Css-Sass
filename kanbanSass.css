@@ -1,0 +1,121 @@
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  background: url(https://marketplace.canva.com/EAFHm4JWsu8/1/0/1600w/canva-pink-landscape-desktop-wallpaper-HGxdJA_xIx0.jpg);
+  background-size: cover;
+  background-attachment: scroll;
+  padding: 1%;
+  height: -moz-max-content;
+  height: max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-height: 100%;
+  min-width: 100%;
+  margin: 0;
+}
+
+#kanban {
+  overflow: auto;
+  width: -moz-max-content;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.column {
+  background-color: rgba(254, 253, 253, 0.5);
+  border-radius: 15px;
+  padding: 0.01em;
+  margin: 0.5em;
+  float: left;
+  max-width: 20%;
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.5em;
+  margin: 1em;
+  padding: 0.5em;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.card:hover {
+  color: white;
+  background-color: rgba(17, 117, 162, 0.53);
+  cursor: pointer;
+}
+.card:hover .tags * {
+  color: black;
+}
+.card:hover .close * {
+  color: white;
+}
+
+h1 {
+  color: white;
+  background-color: rgba(17, 117, 162, 0.53);
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.5em;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: block;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+h2 {
+  padding-left: 1em;
+}
+
+.tags {
+  overflow: hidden;
+}
+.tags * {
+  float: left;
+  margin-left: 9px;
+  margin-top: 8px;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  color: white;
+}
+
+.close {
+  overflow: auto;
+}
+.close * {
+  float: right;
+  color: black;
+}
+
+.tag-front {
+  background-color: green;
+}
+
+.tag-back {
+  background-color: red;
+}
+
+.tag-device {
+  background-color: rgb(243, 209, 19);
+}/*# sourceMappingURL=kanbanSass.css.map */

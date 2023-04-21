@@ -1,0 +1,118 @@
+$color_1: white;
+$color_2: black;
+$font-family_1: 'Roboto', sans-serif;
+$background-color_1: rgb(254, 253, 253,0.5);
+$background-color_2: white;
+$background-color_3: rgba(17, 117, 162, 53%);
+$background-color_4: green;
+$background-color_5: red;
+$background-color_6: rgb(243, 209, 19);
+
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	font-family: $font-family_1;
+}
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	font-family: $font-family_1;
+}
+main {
+	background: url(https://marketplace.canva.com/EAFHm4JWsu8/1/0/1600w/canva-pink-landscape-desktop-wallpaper-HGxdJA_xIx0.jpg);
+	background-size: cover;
+	background-attachment: scroll;
+	padding: 1%;
+	height: max-content;
+	width: max-content;
+	min-height: 100%;
+	min-width: 100%;
+	margin: 0;
+}
+#kanban {
+	overflow: auto;
+	width: max-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+.column {
+	background-color: $background-color_1;
+	border-radius: 15px;
+	padding: 0.01em;
+	margin: 0.5em;
+	float: left;
+	max-width: 20%;
+}
+.card {
+	background-color: $background-color_2;
+	border-radius: 0.5em;
+	margin: 1em;
+	padding: 0.5em;
+	width: fit-content;
+	&:hover {
+		color: $color_1;
+		background-color: $background-color_3;
+		cursor: pointer;
+		.tags {
+			* {
+				color: $color_2;
+			}
+		}
+		.close {
+			* {
+				color: $color_1;
+			}
+		}
+	}
+}
+h1 {
+	color: $color_1;
+	background-color: $background-color_3;
+	width: max-content;
+	padding: 0.5em;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: block;
+	font-weight: 400;
+	font-size: 25px;
+}
+h2 {
+	padding-left: 1em;
+}
+.tags {
+	overflow: hidden;
+	* {
+		float: left;
+		margin-left: 9px;
+		margin-top: 8px;
+		width: 2em;
+		height: 2em;
+		border-radius: 50%;
+		color: $color_1;
+	}
+}
+.close {
+	overflow: auto;
+	* {
+		float: right;
+		color: $color_2;
+	}
+}
+.tag-front {
+	background-color: $background-color_4;
+}
+.tag-back {
+	background-color: $background-color_5;
+}
+.tag-device {
+	background-color: $background-color_6;
+}
